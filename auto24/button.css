@@ -1,0 +1,27 @@
+
+/* CSS */
+#scrape_button{
+  align-items: center;
+  appearance: button;
+  width: 200px;
+  background-color: #19d34e;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  margin: 5px;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+#scrape_button:active {
+  background-color: #06692a;
+}
+
+#scrape_button:hover {
+  background-color: #0ab53a;
+}

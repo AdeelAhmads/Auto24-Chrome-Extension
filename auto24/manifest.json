@@ -1,0 +1,25 @@
+{
+    "name": "auto24 extension",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "auto save data into soov.ee website",
+    "author": "Adeel Ahmad",
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://www.auto24.ee/*"],
+        "js": ["content.js"],
+        "css":["button.css"]
+      },
+      {
+        "matches": ["https://soov.ee/lisa-kuulutus?*"],
+        "js": ["soov.js"]
+      }
+    ],
+    "permissions": ["storage"],
+    "host_permissions": ["<all_urls>"]
+  }
+  
